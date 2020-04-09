@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Model Name="OneWireIO.OneWireIOServer" >
+  <ModelTypeClass>C++</ModelTypeClass>
+  <BaseModel>IOServer</BaseModel>
+  <Element Name="Priority" Value="normal"/>
+
+  <Attributes>
+    <Attribute Name="Description" Type="string" Value="Reads OneWire data from the 1-Wire driver in raspbian" />
+    <Attribute Name="Model" ReadOnly="1" Required="1" Type="string" Value="OneWireIO.OneWireIOServer" />
+  </Attributes>
+
+  <Element Description="The Frequency [Hz] that the component statemachine is run at." Name="fs" Required="1" Type="double" Value="5" />
+  <Element Name="OneWireSensors" Property="0" />
+  <Element AcceptsModel="OneWireIO.OneWireSensor" Name="OneWireSensors/OneWireSensor" Property="0" />
+</Model>

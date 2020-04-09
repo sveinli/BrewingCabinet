@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Model Name="OneWireIO.OneWireSensor" Unique="Name" >
+  <ModelTypeClass>C++</ModelTypeClass>
+  <BaseModel>CDPSignalChannel&lt;double&gt;</BaseModel>
+
+  <Attributes>
+    <Attribute Name="Model" ReadOnly="1" Required="1" Type="string" Value="OneWireIO.OneWireSensor" />
+    <Attribute Description="Sensor name." Name="Name" Required="1" Type="string" />
+    <Attribute Description="Sensor ID (dir name found in /sys/bus/w1/devices/) 28-xxxxx..." Name="SensorID" Required="1" Type="string" />
+    <Attribute Description="Internal value of CDPChannel" Name="InternalValue" ReadOnly="1" Type="double" />
+    <Attribute Description="Value of sensor" Name="Value" Required="1" Type="double" Value="0" />
+  </Attributes>
+</Model>

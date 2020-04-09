@@ -1,0 +1,25 @@
+<Component Model='BrewingLib.SSRControlledHeater' Name='Heater' src='Components/CabinetControl/Heater.xml'  Description='Solid State Relay controlled heater.&amp;#xa;Will create pulse-width modulated output to obtain requested power.'>
+  <fs>100</fs>
+
+  <Signals>
+    <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
+    <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+    <Signal Description="Requested power" Input="1" Model="CDPSignal&lt;double&gt;" Name="Setpoint" Type="double" Unit="W"  Routing='..Heating'></Signal>
+    <Signal Description="SSR output" Input="0" Model="CDPSignal&lt;bool&gt;" Name="SSROutput" Type="bool">
+      <Operator Description="Inverts the value" Model="Automation.InvertOperator&lt;bool&gt;" Name="Invert" Type="bool"></Operator></Signal>
+  </Signals>
+
+  <Alarms>
+    <Alarm Description="A component was suspended!" Enabled="1" Model="CDPAlarm" Name="Component Suspended" Text="Component was suspended!"></Alarm>
+  </Alarms>
+
+  <Timers>
+    <Timer Description="Timer to measure CDPComponent processing." Model="CDPTimer" Name="ProcessTimer"></Timer>
+  </Timers>
+
+  <Parameters>
+    <Parameter Description="Nominal power of heating element (power when on continously)" Name="NominalPower" Unit="W" Value="300"  PreviousValue='100'  TimeLastChanged='Sat Sep 07 04:30:05 2019'></Parameter>
+    <Parameter Description="Minimum pulse width to create." Name="MinPulseWidth" Unit="s" Value="0.010000000000000000208"></Parameter>
+    <Parameter Description="Length of one PWM period." Name="PWMPeriod" Unit="s" Value="1"></Parameter>
+  </Parameters>
+</Component>

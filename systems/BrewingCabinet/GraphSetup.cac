@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!-- Written by CDPStudio 1.9.2, 2019-11-22T00:25:20. -->
+<qtcreator>
+ <data>
+  <variable>Tab0</variable>
+  <valuemap type="QVariantMap">
+   <valuemap type="QVariantMap" key="Graph1">
+    <valuelist type="QVariantList" key="RoutingAliases">
+     <value type="QString"></value>
+     <value type="QString"></value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Routings">
+     <value type="QString">BrewingCabinetApp.GPIOServer.SSROff</value>
+     <value type="QString">BrewingCabinetApp.CabinetControl.Heater.Setpoint</value>
+    </valuelist>
+    <value type="QString" key="RoutingsShow">11</value>
+    <value type="QString" key="Title">Heater</value>
+    <value type="double" key="ValueAxisMax">362.94774026262826</value>
+    <value type="double" key="ValueAxisMin">-57.97615031663115</value>
+    <value type="int" key="ValueAxisPrecision">3</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="Graph2">
+    <valuelist type="QVariantList" key="RoutingAliases">
+     <value type="QString">OutsideTemp</value>
+     <value type="QString">TankTemp</value>
+     <value type="QString">CabinetAirTemp</value>
+     <value type="QString">TempSetPoint</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Routings">
+     <value type="QString">BrewingCabinetApp.CabinetControl.OutsideTemp</value>
+     <value type="QString">BrewingCabinetApp.CabinetControl.TankTemp</value>
+     <value type="QString">BrewingCabinetApp.CabinetControl.CabinetAirTemp</value>
+     <value type="QString">BrewingCabinetApp.CabinetControl.TempSetPoint</value>
+    </valuelist>
+    <value type="QString" key="RoutingsShow">1111</value>
+    <value type="QString" key="Title">Temperatures</value>
+    <value type="double" key="ValueAxisMax">19</value>
+    <value type="double" key="ValueAxisMin">17</value>
+    <value type="int" key="ValueAxisPrecision">3</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="Graph3">
+    <valuelist type="QVariantList" key="RoutingAliases">
+     <value type="QString">P</value>
+     <value type="QString">I</value>
+     <value type="QString">D</value>
+     <value type="QString">Out</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Routings">
+     <value type="QString">BrewingCabinetApp.CabinetControl.Heating.PIDRegulator.InternalPValue</value>
+     <value type="QString">BrewingCabinetApp.CabinetControl.Heating.PIDRegulator.InternalIValue</value>
+     <value type="QString">BrewingCabinetApp.CabinetControl.Heating.PIDRegulator.InternalDValue</value>
+     <value type="QString">BrewingCabinetApp.CabinetControl.Heating.PIDRegulator.Value</value>
+    </valuelist>
+    <value type="QString" key="RoutingsShow">1111</value>
+    <value type="QString" key="Title">PID</value>
+    <value type="double" key="ValueAxisMax">1134.1355023481383</value>
+    <value type="double" key="ValueAxisMin">-865.8644976518586</value>
+    <value type="int" key="ValueAxisPrecision">3</value>
+   </valuemap>
+   <value type="bool" key="Paused">false</value>
+   <value type="bool" key="Selected">true</value>
+   <value type="QString" key="TabTitle">Tab</value>
+   <value type="qlonglong" key="TimeAxisMax">1574378720823</value>
+   <value type="qlonglong" key="TimeAxisMin">1574376473362</value>
+  </valuemap>
+ </data>
+</qtcreator>

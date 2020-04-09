@@ -1,0 +1,35 @@
+<Component BrokerHost='farmer.cloudmqtt.com' BrokerPort='22237' Encryption='TLS' Model='MQTTIO.MQTTClient' Name='MQTTClient' src='Components/MQTTClient.xml'  Description='MQTTClient component'  ClientID='cdp/rL296QjfEzEHTWOmRQC' UserID="zvhwggfv" Password="Ndtn0bFGsThd">
+  <Debug>2</Debug>
+  <fs>0.10000000000000000555</fs>
+
+  <Signals>
+    <Signal Description='Process run time each s.' Input='0' Model='CDPSignal&lt;double&gt;' Name='Process Timer' Type='double' Unit='s/s'></Signal>
+    <Signal Description='Process interval [s].' Input='0' Model='CDPSignal&lt;double&gt;' Name='Process Period' Type='double' Unit='s'></Signal>
+    <Signal Description='Set to true when output is disabled (if parameter RD output disable control is set, and RDManager is not ActiveMaster).' Input='0' Model='CDPSignal&lt;bool&gt;' Name='outputDisabled' Type='bool'></Signal>
+    <Signal Description='The time needed to perform one send and receive.' Input='0' Model='CDPSignal&lt;double&gt;' Name='Send-Receive Roundtrip time' Type='double' Unit='s'></Signal>
+    <Signal Description='Number of items working in ioserver.' Input='0' Model='CDPSignal&lt;unsigned int&gt;' Name='NumberOfNodesOnline' Type='unsigned int' Unit='count'></Signal>
+    <Signal Description='Number of items total in ioserver.' Input='0' Model='CDPSignal&lt;unsigned int&gt;' Name='NumberOfNodes' Type='unsigned int' Unit='count'></Signal>
+  </Signals>
+
+  <Alarms>
+    <Alarm Description='A component was suspended!' Enabled='1' Model='CDPAlarm' Name='Component Suspended' Text='Component was suspended!'></Alarm>
+    <Alarm Description='Transmission-error alarm' Enabled='1' Name='Transmission Error' Text='IOServer transmission-error alarm'></Alarm>
+  </Alarms>
+
+  <Timers>
+    <Timer Description='Timer to measure CDPComponent processing.' Model='CDPTimer' Name='ProcessTimer'></Timer>
+    <Timer Description='Timer used to delay setting Transmission Error alarm. Timeout-delay is configured in Parameter SignalTimeout.' Model='CDPParameterTimer' Name='SignalTimeoutTimer'></Timer>
+  </Timers>
+
+  <Parameters>
+    <Parameter Description='Delay before setting Transmission Error alarm.' Name='SignalTimeout' PreviousValue='1' TimeLastChanged='0' Unit='s' Value='1'></Parameter>
+  </Parameters>
+  <Topic Description='Topic for sending data from CDP to MQTT' Input='1' Model='MQTTIO.PublishTopic&lt;double&gt;' Name='GarageTemp' Topic='/brewcabinet/GarageTemp' Type='double'  InternalValue='0'  Routing='..OneWireIOServer.CabinetToptemp'  RoutingStatus=''  Unit='degC'  Value='0'>
+    <TopicTranslator Model='MQTTIO.TextTopicTranslator' Name='TextTopicTranslator' Prefix='' Suffix=''></TopicTranslator></Topic>
+  <Topic Input="1" Model="MQTTIO.PublishTopic&lt;double&gt;" Name="TankTemp" Topic="/brewcabinet/TankTemp" Type="double" InternalValue="0" Routing="..OneWireIOServer.Tank1Temp" Unit="degC" Value="0"  TriggerOnTimeout='10'  TriggerOnChange='0'></Topic>
+  <Topic Input="1" Model="MQTTIO.PublishTopic&lt;double&gt;" Name="Tank2Temp" Topic="/brewcabinet/Tank2Temp" Type="double" InternalValue="0" Routing="..OneWireIOServer.Tank2Temp" Unit="degC" Value="0"></Topic>
+  <Topic Description='Topic for sending data from CDP to MQTT' Input='1' Model='MQTTIO.PublishTopic&lt;double&gt;' Name='Sensor3Temp' Topic='/brewcabinet/Sensor3Temp' Type='double'  MessageBytes='0'  MessageCount='0'  Routing='..OneWireIOServer.Sensor3Temp'  Unit='degC'  Value='0'></Topic>
+  <Topic Input="1" Model="MQTTIO.PublishTopic&lt;double&gt;" Name="HeatingPower" Topic="/brewcabinet/HeatingPower" Type="double" InternalValue="0" Routing="..CabinetControl.Heater.Setpoint" Unit="W" Value="0"></Topic>
+  <Topic Input="1" Model="MQTTIO.PublishTopic&lt;double&gt;" Name="CurrentTempSetpoint" Topic="/brewcabinet/CurrentTempSetpoint" Type="double" InternalValue="0" Routing="..CabinetControl.TempSetPoint" Unit="degC" Value="0"></Topic>
+  <Topic Input="0" Model="MQTTIO.SubscribeTopic&lt;double&gt;" Name="NewTempSetpoint" Topic="/brewcabinet/NewTempSetpoint" Type="double" InternalValue="0" Routing="" Unit="degC" Value="0"></Topic>
+</Component>

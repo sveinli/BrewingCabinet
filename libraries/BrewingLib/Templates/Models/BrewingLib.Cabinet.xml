@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<Model Name="BrewingLib.Cabinet" >
+ <ModelTypeClass>C++</ModelTypeClass>
+ <BaseModel>CDPComponent</BaseModel>
+ <Element Name="Priority" Value="normal"/>
+ <Element Name="fs" Value="5"/>
+ <Attributes>
+  <Attribute Name="Description" Type="string" Value="Cabinet with heating, cooling and temperature sensor(s)." />
+  <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="BrewingLib.Cabinet" />
+ </Attributes>
+ <Signals>
+  <Signal Description="Setpoint for heater" Input="0" Model="CDPSignal&lt;double&gt;" Name="Heating" Type="double" Unit="W" />
+  <Signal Description="Air temperature inside cabinet." Input="1" Model="CDPSignal&lt;double&gt;" Name="CabinetAirTemp" Routing="..Cabinet.InsideTemp" Type="double" Unit="DegC" Value="" />
+  <Signal Description="Fermentation tank temperature" Input="1" Model="CDPSignal&lt;double&gt;" Name="TankTemp" Type="double" Unit="DegC" />
+  <Signal Description="Temperature outside of cabinet" Input="1" Model="CDPSignal&lt;double&gt;" Name="OutsideTemp" Type="double" Unit="DegC" />
+ </Signals>
+ <Parameters>
+  <Parameter Description="Requested temperature on worth." Name="TempSetPoint" Unit="DegC" Value="20" />
+ </Parameters>
+</Model>

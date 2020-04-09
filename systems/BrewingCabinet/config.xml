@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ProjectConfiguration>
+<!-- Written by CDPStudio 1.9.2, 2019-11-19T10:00:44. -->
+<qtcreator>
+ <data>
+  <variable>RemoteNetworks</variable>
+  <valuemap type="QVariantMap">
+   <valuemap type="QVariantMap" key="NetworkList"/>
+  </valuemap>
+ </data>
+</qtcreator>

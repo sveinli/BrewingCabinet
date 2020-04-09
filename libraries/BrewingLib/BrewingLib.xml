@@ -1,0 +1,7 @@
+<Library Name="BrewingLib">
+ <Models>
+  <Model Name="BrewingLib.BrewingCabinetSim"/>
+  <Model Name="BrewingLib.Cabinet"/>
+  <Model Name="BrewingLib.SSRControlledHeater"/>
+ </Models>
+</Library>

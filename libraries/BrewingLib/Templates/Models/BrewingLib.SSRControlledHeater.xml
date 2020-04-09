@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<Model Name="BrewingLib.SSRControlledHeater" >
+ <ModelTypeClass>C++</ModelTypeClass>
+ <BaseModel>CDPComponent</BaseModel>
+ <Element Name="Priority" Value="normal"/>
+ <Element Name="fs" Value="50"/>
+ <Attributes>
+  <Attribute Name="Description" Type="string" Value="Solid State Relay controlled heater.&#10;Will create pulse-width modulated output to obtain requested power." />
+  <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="BrewingLib.SSRControlledHeater" />
+ </Attributes>
+ <Parameters>
+  <Parameter Description="Nominal power of heating element (power when on continously)" Name="NominalPower" Unit="W" Value="100" />
+  <Parameter Description="Minimum pulse width to create." Name="MinPulseWidth" Unit="s" Value="0.02" />
+  <Parameter Description="Length of one PWM period." Name="PWMPeriod" Unit="s" Value="1" />
+ </Parameters>
+ <Signals>
+  <Signal Description="Requested power" Input="1" Model="CDPSignal&lt;double&gt;" Name="Setpoint" Type="double" Unit="W" />
+  <Signal Description="SSR output" Input="0" Model="CDPSignal&lt;bool&gt;" Name="SSROutput" Type="bool" />
+ </Signals>
+</Model>

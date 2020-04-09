@@ -1,0 +1,6 @@
+<Library Name="OneWireIO">
+ <Models>
+  <Model Name="OneWireIO.OneWireIOServer"/>
+  <Model Name="OneWireIO.OneWireSensor"/>
+ </Models>
+</Library>

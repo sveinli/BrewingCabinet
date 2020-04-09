@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ProjectConfiguration>
+<!-- Written by CDPStudio 2.0.0, 2020-04-05T01:42:17. -->
+<qtcreator>
+ <data>
+  <variable>ProjectManagerSettings</variable>
+  <valuemap type="QVariantMap">
+   <valuemap type="QVariantMap" key="ApplicationSettings">
+    <value type="QString" key="DeployDirectory">/home/pi/BrewingCabinet/BrewingCabinetApp</value>
+    <value type="QString" key="DeviceId">192.168.1.5BrewingCabinetens40</value>
+    <value type="QString" key="TargetFriendlyName">Raspbian ARMv6 32bit</value>
+   </valuemap>
+  </valuemap>
+ </data>
+</qtcreator>
