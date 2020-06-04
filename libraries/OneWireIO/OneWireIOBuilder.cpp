@@ -2,9 +2,7 @@
 OneWireIOBuilder implementation.
 */
 
-#include "OneWireIOServer.h"
 //#include "OneWireSensor.h"
-#include "OneWireSensor.h"
 #include "OneWireIOBuilder.h"
 
 using namespace OneWireIO;
@@ -16,9 +14,6 @@ OneWireIOBuilder::OneWireIOBuilder(const char* libName, const char* timeStamp)
 
 CDPComponent* OneWireIOBuilder::CreateNewComponent(const std::string& type)
 {
-  if (type=="OneWireIO.OneWireIOServer")
-    return new OneWireIOServer;
-
   return CDPBuilder::CreateNewComponent(type);
 }
 
@@ -34,11 +29,8 @@ CDPObject* OneWireIOBuilder::CreateNewObject(const std::string& type)
 {
 //    if (type=="OneWireIO.OneWireSensor")
 //        return new OneWireSensor;
-    
-    if (type=="OneWireIO.OneWireSensor")
-        return new OneWireSensor;
-    
-    return CDPBuilder::CreateNewObject(type);
+
+  return CDPBuilder::CreateNewObject(type);
 }
 
 /**

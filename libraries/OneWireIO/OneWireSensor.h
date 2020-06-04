@@ -12,7 +12,7 @@ namespace OneWireIO {
 class OneWireSensor : public ServerIO::CDPSignalChannel<double>
 {
 public:
-  OneWireSensor(const std::string& sensorID);
+   OneWireSensor(const std::string& sensorID);
   ~OneWireSensor();
 
   bool Initialize();
