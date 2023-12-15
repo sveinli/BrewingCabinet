@@ -1,5 +1,6 @@
 <Component Encryption='Unencrypted' ListenAddress='0.0.0.0' ListenPort='1883' Model='MQTTIO.MQTTBroker' Name='MQTTBroker' src='Components/MQTTBroker.xml'  Description='MQTTBroker component'>
   <fs>10</fs>
+  <SchedulingOrder>BottomUp</SchedulingOrder>
 
   <Signals>
     <Signal Description='Process run time each s.' Input='0' Model='CDPSignal&lt;double&gt;' Name='Process Timer' Type='double' Unit='s/s'></Signal>
@@ -8,6 +9,7 @@
     <Signal Description='The time needed to perform one send and receive.' Input='0' Model='CDPSignal&lt;double&gt;' Name='Send-Receive Roundtrip time' Type='double' Unit='s'></Signal>
     <Signal Description='Number of items working in ioserver.' Input='0' Model='CDPSignal&lt;unsigned int&gt;' Name='NumberOfNodesOnline' Type='unsigned int' Unit='count'></Signal>
     <Signal Description='Number of items total in ioserver.' Input='0' Model='CDPSignal&lt;unsigned int&gt;' Name='NumberOfNodes' Type='unsigned int' Unit='count'></Signal>
+    <Signal Description="If implemented by spesific IOServer the signal can be set true to disable output." Input="1" Model="CDPSignal&lt;bool&gt;" Name="OutputDisable" Type="bool"></Signal>
   </Signals>
 
   <Alarms>
@@ -16,7 +18,6 @@
   </Alarms>
 
   <Timers>
-    <Timer Description='Timer to measure CDPComponent processing.' Model='CDPTimer' Name='ProcessTimer'></Timer>
     <Timer Description='Timer used to delay setting Transmission Error alarm. Timeout-delay is configured in Parameter SignalTimeout.' Model='CDPParameterTimer' Name='SignalTimeoutTimer'></Timer>
   </Timers>
 

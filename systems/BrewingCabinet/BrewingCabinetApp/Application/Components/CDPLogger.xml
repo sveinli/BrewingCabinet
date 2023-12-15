@@ -5,6 +5,7 @@
   <InMemoryLogging>0</InMemoryLogging>
   <SizeAlarmGB>0</SizeAlarmGB>
   <fs>100</fs>
+  <SchedulingOrder>BottomUp</SchedulingOrder>
 
   <Signals>
     <Signal Description='Process run time each s.' Input='0' Model='CDPSignal&lt;double&gt;' Name='Process Timer' Type='double' Unit='s/s'></Signal>
@@ -18,7 +19,6 @@
   </Alarms>
 
   <Timers>
-    <Timer Description='Timer to measure CDPComponent processing.' Model='CDPTimer' Name='ProcessTimer'></Timer>
   </Timers>
 
   <LoggedValues>

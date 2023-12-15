@@ -7,7 +7,7 @@
 
   <EventProviders>
     <!-- A list of components (CDPEventNode/CDPEventLogger) providing events. -->
-    <EventProvider Name="Provider1" Routing="BrewingCabinetApp.CDP.CDPEventNode"></EventProvider>
+    <EventProvider Name="Provider1" Routing="..CDPEventNode"></EventProvider>
   </EventProviders>
 
   <Subscriptions>

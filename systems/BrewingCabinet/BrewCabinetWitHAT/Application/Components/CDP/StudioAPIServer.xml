@@ -2,7 +2,7 @@
   <Debug>0</Debug>
   <fs>10</fs>
   <SchedulingOrder>BottomUp</SchedulingOrder>
-  <DefaultPort>7690</DefaultPort>
+  <DefaultPort>7689</DefaultPort>
   <PortRangeUpperLimit>8705</PortRangeUpperLimit>
   <NetworkInterface>ETH0</NetworkInterface>
   <ValueUpdateFs>20</ValueUpdateFs>

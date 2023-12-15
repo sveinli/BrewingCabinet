@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
-<Application Name="BrewingCabinetApp" Model="Application" Description=''>
-  <ApplicationHandle>2</ApplicationHandle>
+<Application Name="BrewCabinetWitHAT" Model="Application" Description=''>
+  <ApplicationHandle>1</ApplicationHandle>
   <fs>10</fs>
   <SchedulingOrder>BottomUp</SchedulingOrder>
   <ClockSync>None</ClockSync>
@@ -9,7 +9,7 @@
   <OStimeInterval>120</OStimeInterval>
   <Domain>BrewingCabinet</Domain>
 
-  <NetworkInterface Name="ETH0" MAC="" IPAddress="192.168.1.7" SubnetMask="255.255.255.0"></NetworkInterface>
+  <NetworkInterface Name="ETH0" MAC="" IPAddress="192.168.1.23" SubnetMask="255.255.255.0"></NetworkInterface>
 
   
     <LogIncludeTimestamp>1</LogIncludeTimestamp>
@@ -17,13 +17,9 @@
   
 
   <Subcomponents>
-    <Subcomponent Name="CDP"                Model="CDP"                       src="Components\CDP.xml"></Subcomponent>
-    <Subcomponent Name='OneWireIOServer'    Model='OneWireIO.OneWireIOServer' src='Components/OneWireIOServer.xml'></Subcomponent>
-    <Subcomponent Name='CDPLogger'          Model='CDPLogger.CDPLogger'       src='Components/CDPLogger.xml'></Subcomponent>
-    <Subcomponent Name='MQTTClient'         Model='MQTTIO.MQTTClient'         src='Components/MQTTClient.xml' BrokerHost='127.0.0.1' BrokerPort='1883' Encryption='Unencrypted'></Subcomponent>
-    <Subcomponent Name='MQTTBroker'         Model='MQTTIO.MQTTBroker'         src='Components/MQTTBroker.xml' Encryption='Unencrypted' ListenAddress='127.0.0.1' ListenPort='1883'></Subcomponent>
-    <Subcomponent Name='GPIOServer'         Model='GPIOPinIO.GPIOServer'      src='Components/GPIOServer.xml'></Subcomponent>
-    <Subcomponent Name="CabinetControl"     Model="BrewingLib.Cabinet"        src="Components/CabinetControl.xml"></Subcomponent>
+    <Subcomponent Name="CDP"        Model="CDP"        src="Components\CDP.xml"></Subcomponent>
+    <Subcomponent Model="GPIOPinIO.GPIOServer" Name="GPIOServer" src="Components/GPIOServer.xml"></Subcomponent>
+    <Subcomponent Model="OneWireIO.OneWireIOServer" Name="OneWireIOServer" src="Components/OneWireIOServer.xml"></Subcomponent>
   </Subcomponents>
 
   <Signals>

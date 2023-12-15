@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by CDPStudio 2.0.0, 2020-04-09T17:38:57. -->
+<!-- Written by CDPStudio 2.4.2, 2023-04-23T16:11:17. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
-  <value type="QByteArray">{8c45c2c4-4b25-487f-b0cc-115ca23028ce}</value>
+  <value type="QByteArray">{5147ab6c-2c42-4bb0-b046-a97e93da6b45}</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -22,7 +22,13 @@
      <value type="QByteArray" key="CurrentPreferences">CppGlobal</value>
     </valuemap>
    </valuemap>
-   <value type="int" key="EditorConfiguration.CodeStyle.Count">1</value>
+   <valuemap type="QVariantMap" key="EditorConfiguration.CodeStyle.1">
+    <value type="QString" key="language">QmlJS</value>
+    <valuemap type="QVariantMap" key="value">
+     <value type="QByteArray" key="CurrentPreferences">QmlJSGlobal</value>
+    </valuemap>
+   </valuemap>
+   <value type="int" key="EditorConfiguration.CodeStyle.Count">2</value>
    <value type="QByteArray" key="EditorConfiguration.Codec">UTF-8</value>
    <value type="bool" key="EditorConfiguration.ConstrainTooltips">false</value>
    <value type="int" key="EditorConfiguration.IndentSize">4</value>
@@ -34,6 +40,7 @@
    <value type="bool" key="EditorConfiguration.ScrollWheelZooming">true</value>
    <value type="bool" key="EditorConfiguration.ShowMargin">false</value>
    <value type="int" key="EditorConfiguration.SmartBackspaceBehavior">0</value>
+   <value type="bool" key="EditorConfiguration.SmartSelectionChanging">true</value>
    <value type="bool" key="EditorConfiguration.SpacesForTabs">true</value>
    <value type="int" key="EditorConfiguration.TabKeyBehavior">0</value>
    <value type="int" key="EditorConfiguration.TabSize">8</value>
@@ -42,37 +49,73 @@
    <value type="bool" key="EditorConfiguration.addFinalNewLine">true</value>
    <value type="bool" key="EditorConfiguration.cleanIndentation">true</value>
    <value type="bool" key="EditorConfiguration.cleanWhitespace">true</value>
+   <value type="QString" key="EditorConfiguration.ignoreFileTypes">*.md, *.MD, Makefile</value>
    <value type="bool" key="EditorConfiguration.inEntireDocument">false</value>
+   <value type="bool" key="EditorConfiguration.skipTrailingWhitespace">true</value>
   </valuemap>
  </data>
  <data>
   <variable>ProjectExplorer.Project.PluginSettings</variable>
   <valuemap type="QVariantMap">
-   <value type="QString" key="ActiveNetwork">Loopback3</value>
+   <value type="QString" key="ActiveNetwork">BrewingCabinetens33</value>
    <valuemap type="QVariantMap" key="AnalyzeMode">
     <valuemap type="QVariantMap" key="Tab0">
      <valuemap type="QVariantMap" key="Graph1">
-      <valuelist type="QVariantList" key="RoutingAliases"/>
-      <valuelist type="QVariantList" key="Routings"/>
-      <value type="QString" key="RoutingsShow"></value>
-      <value type="QString" key="Title">Untitled</value>
-      <value type="double" key="ValueAxisMax">10</value>
-      <value type="double" key="ValueAxisMin">0</value>
+      <valuelist type="QVariantList" key="RoutingAliases">
+       <value type="QString"></value>
+      </valuelist>
+      <valuelist type="QVariantList" key="Routings">
+       <value type="QString">BrewCabinetWitHAT.OneWireIOServer.Tank2Temp</value>
+      </valuelist>
+      <value type="QString" key="RoutingsShow">1</value>
+      <value type="QString" key="Title">Value</value>
+      <value type="double" key="ValueAxisMax">15</value>
+      <value type="double" key="ValueAxisMin">10</value>
       <value type="int" key="ValueAxisPrecision">3</value>
      </valuemap>
-     <value type="bool" key="Paused">false</value>
+     <valuemap type="QVariantMap" key="Graph2">
+      <valuelist type="QVariantList" key="RoutingAliases">
+       <value type="QString"></value>
+      </valuelist>
+      <valuelist type="QVariantList" key="Routings">
+       <value type="QString">BrewCabinetWitHAT.OneWireIOServer.Tank2Temp.InternalValue</value>
+      </valuelist>
+      <value type="QString" key="RoutingsShow">1</value>
+      <value type="QString" key="Title">RawValue</value>
+      <value type="double" key="ValueAxisMax">15000</value>
+      <value type="double" key="ValueAxisMin">10000</value>
+      <value type="int" key="ValueAxisPrecision">3</value>
+     </valuemap>
      <value type="bool" key="Selected">true</value>
      <value type="QString" key="TabTitle">Tab</value>
-     <value type="qlonglong" key="TimeAxisMax">1586357319689</value>
-     <value type="qlonglong" key="TimeAxisMin">1586357309689</value>
+     <value type="qlonglong" key="TimeAxisMax">1682259061990</value>
+     <value type="qlonglong" key="TimeAxisMin">1682258313702</value>
     </valuemap>
    </valuemap>
    <valuelist type="QVariantList" key="Block Diagram">
     <valuemap type="QVariantMap">
      <valuemap type="QVariantMap" key="data">
-      <valuelist type="QVariantList" key="names"/>
+      <valuelist type="QVariantList" key="nodes">
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetAppNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">200</value>
+         <value type="double" key="y">100</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewCabinetWitHATNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">0</value>
+         <value type="double" key="y">458</value>
+        </valuemap>
+       </valuemap>
+      </valuelist>
+      <valuemap type="QVariantMap" key="settings">
+       <value type="bool" key="autoLayoutEnabled">true</value>
+      </valuemap>
      </valuemap>
-     <value type="QString" key="id">PinnedNodes</value>
+     <value type="QString" key="id">BrewingCabinet</value>
     </valuemap>
     <valuemap type="QVariantMap">
      <valuemap type="QVariantMap" key="data">
@@ -81,21 +124,337 @@
       <value type="bool" key="isInheritedFilterActive">true</value>
       <value type="bool" key="isInternalFilterActive">true</value>
       <value type="bool" key="isParametersHiddenFilterActive">true</value>
-      <value type="bool" key="isPassThroughConnectionsHiddenFilterActive">false</value>
+      <value type="bool" key="isPassThroughConnectionsHiddenFilterActive">true</value>
       <value type="bool" key="isPropertiesHiddenFilterActive">true</value>
       <value type="bool" key="isRoutingFilterActive">false</value>
       <value type="bool" key="isValueNodesHiddenFilterActive">false</value>
      </valuemap>
      <value type="QString" key="id">FilterState</value>
     </valuemap>
+    <valuemap type="QVariantMap">
+     <valuemap type="QVariantMap" key="data">
+      <valuelist type="QVariantList" key="names"/>
+     </valuemap>
+     <value type="QString" key="id">PinnedNodes</value>
+    </valuemap>
+    <valuemap type="QVariantMap">
+     <valuemap type="QVariantMap" key="data">
+      <valuelist type="QVariantList" key="nodes">
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewCabinetWitHAT.GPIOServer.Pin18NodeType.ComponentDataType.InternalDataDirection.Sink</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">800</value>
+         <value type="double" key="y">50</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewCabinetWitHAT.GPIOServer.SSROffNodeType.ComponentDataType.InternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-135</value>
+         <value type="double" key="y">50</value>
+        </valuemap>
+       </valuemap>
+      </valuelist>
+      <valuemap type="QVariantMap" key="settings">
+       <value type="bool" key="autoLayoutEnabled">true</value>
+      </valuemap>
+     </valuemap>
+     <value type="QString" key="id">BrewCabinetWitHAT.GPIOServer</value>
+    </valuemap>
+    <valuemap type="QVariantMap">
+     <valuemap type="QVariantMap" key="data">
+      <valuelist type="QVariantList" key="nodes">
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewCabinetWitHAT.GPIOServerNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">0</value>
+         <value type="double" key="y">301</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewCabinetWitHAT.CPULoadNodeType.ComponentDataType.InternalDataDirection.Sink</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">800</value>
+         <value type="double" key="y">50</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewCabinetWitHAT.MemUsedRelativeNodeType.ComponentDataType.InternalDataDirection.Sink</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">800</value>
+         <value type="double" key="y">104</value>
+        </valuemap>
+       </valuemap>
+      </valuelist>
+      <valuemap type="QVariantMap" key="settings">
+       <value type="bool" key="autoLayoutEnabled">true</value>
+      </valuemap>
+     </valuemap>
+     <value type="QString" key="id">BrewCabinetWitHAT</value>
+    </valuemap>
+    <valuemap type="QVariantMap">
+     <valuemap type="QVariantMap" key="data">
+      <valuelist type="QVariantList" key="nodes">
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.CabinetControl.Heating.PIDRegulator.MinI.ValueNodeType.LabelDataType.ExternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-491</value>
+         <value type="double" key="y">677.3333333333334</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.CabinetControl.Heating.PIDRegulator.Kf.ValueNodeType.LabelDataType.ExternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-473</value>
+         <value type="double" key="y">623.3333333333334</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.CabinetControl.Heating.PIDRegulator.MaxI.ValueNodeType.LabelDataType.ExternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-497</value>
+         <value type="double" key="y">731.3333333333334</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.CabinetControl.Heater.SSROutputNodeType.LabelDataType.ExternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-370</value>
+         <value type="double" key="y">893.3333333333334</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.CabinetControl.Heating.PIDRegulator.Kp.ValueNodeType.LabelDataType.ExternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-479</value>
+         <value type="double" key="y">461.33333333333337</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.OneWireIOServerNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">147.36570862239842</value>
+         <value type="double" key="y">991.6868186323092</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.CabinetControl.Heating.PIDRegulator.InternalPValueNodeType.LabelDataType.ExternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-527</value>
+         <value type="double" key="y">299.33333333333337</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.CPULoadNodeType.ComponentDataType.InternalDataDirection.Sink</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">1164.5391476709615</value>
+         <value type="double" key="y">206.17244796828544</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.CabinetControl.Heater.SetpointNodeType.LabelDataType.ExternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-343</value>
+         <value type="double" key="y">83.33333333333334</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.CabinetControl.Heater.SetpointNodeType.LabelDataType.ExternalDataDirection.Sink</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">991.1555996035679</value>
+         <value type="double" key="y">1199.1252064750574</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.MQTTClientNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">630</value>
+         <value type="double" key="y">778</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.GPIOServerNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">200</value>
+         <value type="double" key="y">414</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.MQTTBrokerNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">0</value>
+         <value type="double" key="y">1534</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.CabinetControlNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">630</value>
+         <value type="double" key="y">1148</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.CabinetControl.Heating.PIDRegulator.InternalIValueNodeType.LabelDataType.ExternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-519</value>
+         <value type="double" key="y">353.33333333333337</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.CDPLoggerNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">630</value>
+         <value type="double" key="y">100</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.MemUsedRelativeNodeType.ComponentDataType.InternalDataDirection.Sink</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">1166.0872150644202</value>
+         <value type="double" key="y">147.5282457879088</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.CabinetControl.TankTempNodeType.LabelDataType.ExternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-301</value>
+         <value type="double" key="y">137.33333333333334</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.CabinetControl.Heating.PIDRegulator.Kd.ValueNodeType.LabelDataType.ExternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-479</value>
+         <value type="double" key="y">569.3333333333334</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.CabinetControl.Heating.PIDRegulator.InternalDValueNodeType.LabelDataType.ExternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-528</value>
+         <value type="double" key="y">407.33333333333337</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.CabinetControl.CabinetAirTempNodeType.LabelDataType.ExternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-347</value>
+         <value type="double" key="y">245.33333333333334</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.CabinetControl.OutsideTempNodeType.LabelDataType.ExternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-324</value>
+         <value type="double" key="y">191.33333333333334</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.CabinetControl.Heating.PIDRegulator.TDecay.ValueNodeType.LabelDataType.ExternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-523</value>
+         <value type="double" key="y">785.3333333333334</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.CabinetControl.TempSetPointNodeType.LabelDataType.ExternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-332</value>
+         <value type="double" key="y">839.3333333333334</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.CabinetControl.Heating.PIDRegulator.Ki.ValueNodeType.LabelDataType.ExternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-472</value>
+         <value type="double" key="y">515.3333333333334</value>
+        </valuemap>
+       </valuemap>
+      </valuelist>
+      <valuemap type="QVariantMap" key="settings">
+       <value type="bool" key="autoLayoutEnabled">false</value>
+      </valuemap>
+     </valuemap>
+     <value type="QString" key="id">BrewingCabinetApp</value>
+    </valuemap>
+    <valuemap type="QVariantMap">
+     <valuemap type="QVariantMap" key="data">
+      <valuelist type="QVariantList" key="nodes">
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.MQTTClient.NewTempSetpointNodeType.ComponentDataType.InternalDataDirection.Sink</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">800</value>
+         <value type="double" key="y">50</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.MQTTClient.TankTempNodeType.ComponentDataType.InternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-162</value>
+         <value type="double" key="y">50</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.MQTTClient.GarageTempNodeType.ComponentDataType.InternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-183</value>
+         <value type="double" key="y">104</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.MQTTClient.Tank2TempNodeType.ComponentDataType.InternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-173</value>
+         <value type="double" key="y">158</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.MQTTClient.HeatingPowerNodeType.ComponentDataType.InternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-191</value>
+         <value type="double" key="y">212</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.MQTTClient.Sensor3TempNodeType.ComponentDataType.InternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-191</value>
+         <value type="double" key="y">266</value>
+        </valuemap>
+       </valuemap>
+       <valuemap type="QVariantMap">
+        <value type="QString" key="id">BrewingCabinetApp.MQTTClient.CurrentTempSetpointNodeType.ComponentDataType.InternalDataDirection.Source</value>
+        <valuemap type="QVariantMap" key="position">
+         <value type="double" key="x">-255</value>
+         <value type="double" key="y">320</value>
+        </valuemap>
+       </valuemap>
+      </valuelist>
+      <valuemap type="QVariantMap" key="settings">
+       <value type="bool" key="autoLayoutEnabled">true</value>
+      </valuemap>
+     </valuemap>
+     <value type="QString" key="id">BrewingCabinetApp.MQTTClient</value>
+    </valuemap>
    </valuelist>
+   <valuelist type="QVariantList" key="ClangCodeModel.CustomCommandLineKey"/>
+   <value type="bool" key="ClangCodeModel.UseGlobalConfig">true</value>
+   <value type="QString" key="ClangCodeModel.WarningConfigId">Builtin.Questionable</value>
+   <valuemap type="QVariantMap" key="ClangTools">
+    <value type="bool" key="ClangTools.BuildBeforeAnalysis">true</value>
+    <value type="QString" key="ClangTools.DiagnosticConfig">Builtin.DefaultTidyAndClazy</value>
+    <value type="int" key="ClangTools.ParallelJobs">1</value>
+    <valuelist type="QVariantList" key="ClangTools.SelectedDirs"/>
+    <valuelist type="QVariantList" key="ClangTools.SelectedFiles"/>
+    <valuelist type="QVariantList" key="ClangTools.SuppressedDiagnostics"/>
+    <value type="bool" key="ClangTools.UseGlobalSettings">true</value>
+   </valuemap>
    <valuemap type="QVariantMap" key="LocalNetworks">
     <valuemap type="QVariantMap" key="NetworkList">
-     <valuemap type="QVariantMap" key="ens38">
-      <value type="QString" key="Id">BrewingCabinetens38</value>
-      <value type="QString" key="Ip">192.168.196.134</value>
-      <value type="QString" key="Mask">255.255.255.0</value>
-      <value type="QString" key="Name">ens38</value>
+     <valuemap type="QVariantMap" key="ens33">
+      <value type="QString" key="Id">BrewingCabinetens33</value>
+      <value type="QString" key="Ip">192.168.1.110</value>
+      <value type="QString" key="Name">ens33</value>
       <value type="QString" key="Password"></value>
       <value type="QString" key="Url">Local interface</value>
       <value type="QString" key="Username"></value>
@@ -110,13 +469,13 @@
       <value type="int" key="LARSApp.LARS.MainWinch.Winch.Drive">156</value>
       <value type="int" key="LARSApp.Location">110</value>
      </valuemap>
-     <value type="QByteArray" key="HorizontalHeader">000000ff00000000000000010000000000000009000000002600000000000000020000000300000001000000060000000700000008000000090000000a00000004000000050000000b0000000c0000000d0000000e0000000f0000001300000010000000110000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e000000120000001f0000002000000021000000220000002300000024000000250000002600000000000000030000000100000002000000090000000a00000004000000050000000600000007000000080000000b0000000c0000000d0000000e0000000f00000011000000120000001e00000010000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001f00000020000000210000002200000023000000240000002500000026313c0078000000000b0000001b000000640000000800000042000000090000003f00000000000000000000000c0000001a0000001c000000640000000d0000009a0000000a000000aa0000001d000000640000001a000000640000000b00000074000011210000002601010001000000000000000000000000640000001a0000008100000000000000260000000000000001000000000000004c00000001000000000000005800000001000000000000006900000001000000000000000000000001000000000000000000000001000000000000003100000001000000000000020500000001000000000000026400000001000000000000007300000001000000000000000000000001000000000000000000000001000000000000000000000001000000000000000000000001000000000000009a00000001000000000000012700000001000000000000008d0000000100000000000000a300000001000000000000003d00000001000000000000007900000001000000000000007a0000000100000000000001560000000100000000000000e700000001000000000000014d0000000100000000000001d000000001000000000000004f00000001000000000000004c00000001000000000000000000000001000000000000000000000001000000000000000000000001000000000000000000000001000000000000005500000001000000000000001a00000001000000000000001a00000001000000000000001a00000001000000000000001a00000001000000000000001a00000001000000000000001a0000000100000000000003e8000000001a</value>
+     <value type="QByteArray" key="HorizontalHeader">000000ff00000000000000010000000000000009000000002600000000000000020000000300000001000000060000000700000008000000090000000a00000004000000050000000b0000000c0000000d0000000e0000000f0000001300000010000000110000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e000000120000001f0000002000000021000000220000002300000024000000250000002600000000000000030000000100000002000000090000000a00000004000000050000000600000007000000080000000b0000000c0000000d0000000e0000000f00000011000000120000001e00000010000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001f00000020000000210000002200000023000000240000002500000026313c0078000000000b00000008000000420000000d0000009a0000000c0000001a0000001d000000640000001c0000006400000000000000000000000b000000740000000a000000aa0000001b000000640000001a00000064000000090000003f000011210000002601010001000000000000000000000000640000001a0000008100000000000000260000000000000001000000000000004c00000001000000000000005800000001000000000000006900000001000000000000000000000001000000000000000000000001000000000000003100000001000000000000020500000001000000000000026400000001000000000000007300000001000000000000000000000001000000000000000000000001000000000000000000000001000000000000000000000001000000000000009a00000001000000000000012700000001000000000000008d0000000100000000000000a300000001000000000000003d00000001000000000000007900000001000000000000007a0000000100000000000001560000000100000000000000e700000001000000000000014d0000000100000000000001d000000001000000000000004f00000001000000000000004c00000001000000000000000000000001000000000000000000000001000000000000000000000001000000000000000000000001000000000000005500000001000000000000001a00000001000000000000001a00000001000000000000001a00000001000000000000001a00000001000000000000001a00000001000000000000001a0000000100000000000003e8000000001a</value>
     </valuemap>
     <valuemap type="QVariantMap" key="ApplicationsApplication">
      <value type="bool" key="Collapsed">false</value>
      <value type="bool" key="FullyExpanded">false</value>
      <valuemap type="QVariantMap" key="Heights"/>
-     <value type="QByteArray" key="HorizontalHeader">000000ff0000000000000001000000010000000000000000000000000000000011d1ff010000000d00000008000000640000000900000064000000060000006400000007000000640000000400000064000000000000006400000010000000640000000e000000640000000f000000640000000c000000640000000d000000640000000a000000640000000b00000064000004ee0000001101010001000000000000000000000000640000001a000000810000000000000011000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000000000000100000000000003c20000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000003e80000000064</value>
+     <value type="QByteArray" key="HorizontalHeader">000000ff0000000000000001000000010000000000000000000000000000000011d1ff010000000d00000008000000640000000f000000640000000e000000640000000d000000640000000c00000064000000000000006400000010000000640000000700000064000000060000006400000004000000640000000b000000640000000a000000640000000900000064000005100000001101010001000000000000000000000000640000001a000000810000000000000011000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000000000000100000000000003e40000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000003e80000000064</value>
     </valuemap>
     <valuemap type="QVariantMap" key="ConnectorsCDPConnector">
      <value type="bool" key="Collapsed">false</value>
@@ -140,7 +499,7 @@
      <value type="bool" key="Collapsed">false</value>
      <value type="bool" key="FullyExpanded">false</value>
      <valuemap type="QVariantMap" key="Heights"/>
-     <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000001441d00f000000090000000600000064000000120000006400000000000000640000001300000064000000100000006400000011000000640000000e000000640000000f000000640000000c00000064000005030000001401010001000000000000000000000000640000001a0000008100000000000000140000000000000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000000000000001000000000000006400000001000000000000006400000001000000000000011b0000000100000000000000640000000100000000000000640000000100000000000000000000000100000000000000640000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000003e80000000064</value>
+     <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000001441d00f0000000900000006000000640000000e000000640000000f000000640000000c00000064000000120000006400000013000000640000001000000064000000110000006400000000000000640000054b0000001401010001000000000000000000000000640000001a0000008100000000000000140000000000000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000000000000001000000000000006400000001000000000000006400000001000000000000011b0000000100000000000000640000000100000000000000640000000100000000000000000000000100000000000000ac0000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000003e80000000064</value>
     </valuemap>
     <valuelist type="QVariantList" key="HiddenEditors"/>
     <valuemap type="QVariantMap" key="LoggedValuesCDPLogger.LoggedValue">
@@ -163,13 +522,13 @@
      <value type="bool" key="Collapsed">false</value>
      <value type="bool" key="FullyExpanded">false</value>
      <valuemap type="QVariantMap" key="Heights"/>
-     <value type="QByteArray" key="HorizontalHeader">000000ff0000000000000001000000010000000000000000000000000000000002030000000200000000000000640000000100000064000000000000000201010001000000000000000000000000640000001a000000810000000000000002000000000000000100000000000000000000000100000000000003e800ffffffff</value>
+     <value type="QByteArray" key="HorizontalHeader">000000ff0000000000000001000000010000000000000000000000000000000002030000000200000001000000640000000000000064000000000000000201010001000000000000000000000000640000001a000000810000000000000002000000000000000100000000000000000000000100000000000003e800ffffffff</value>
     </valuemap>
     <valuemap type="QVariantMap" key="NetworkInterfaceNetworkInterface">
      <value type="bool" key="Collapsed">false</value>
      <value type="bool" key="FullyExpanded">true</value>
      <valuemap type="QVariantMap" key="Heights"/>
-     <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000000701000000010000000000000064000005220000000701010001000000000000000000000000640000001a000000810000000000000007000000000000000100000000000000640000000100000000000000640000000100000000000000890000000100000000000000640000000100000000000000ad0000000100000000000002c00000000100000000000003e80000000064</value>
+     <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000000701000000010000000000000064000005050000000701010001000000000000000000000000640000001a000000810000000000000007000000000000000100000000000000640000000100000000000000640000000100000000000000890000000100000000000000640000000100000000000000ad0000000100000000000002a30000000100000000000003e80000000064</value>
     </valuemap>
     <valuemap type="QVariantMap" key="OneWireSensorsOneWireIO.OneWireSensor">
      <value type="bool" key="Collapsed">false</value>
@@ -183,13 +542,13 @@
      <value type="bool" key="Collapsed">false</value>
      <value type="bool" key="FullyExpanded">true</value>
      <valuemap type="QVariantMap" key="Heights"/>
-     <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000060000000000000000000000001239000000000004000000040000001a00000005000000e000000003000000450000000000000000000008570000001201010001000000000000000000000000640000001a0000008100000000000000120000000000000001000000000000004e0000000100000000000000770000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000004a700000001000000000000015300000001000000000000001a00000001000000000000001a00000001000000000000001a00000001000000000000001a00000001000000000000001a00000001000000000000001a00000001000000000000001a00000001000000000000001a0000000100000000000000640000000100000000000000640000000100000000000003e80000000064</value>
+     <value type="QByteArray" key="HorizontalHeader">000000ff0000000000000001000000010000000600000000000000000000000012390000000000040000000300000045000000000000000000000005000000e0000000040000001a000008570000001201010001000000000000000000000000640000001a0000008100000000000000120000000000000001000000000000004e0000000100000000000000770000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000004a700000001000000000000015300000001000000000000001a00000001000000000000001a00000001000000000000001a00000001000000000000001a00000001000000000000001a00000001000000000000001a00000001000000000000001a00000001000000000000001a0000000100000000000000640000000100000000000000640000000100000000000003e80000000064</value>
     </valuemap>
     <valuemap type="QVariantMap" key="PortsCDPPort">
      <value type="bool" key="Collapsed">false</value>
      <value type="bool" key="FullyExpanded">false</value>
      <valuemap type="QVariantMap" key="Heights"/>
-     <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000000cc10f00000007000000080000006400000009000000640000000600000064000000070000006400000000000000640000000a000000640000000b00000064000005220000000c01010001000000000000000000000000640000001a00000081000000000000000c000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000003920000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000003e80000000064</value>
+     <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000000cc10f0000000700000008000000640000000000000064000000070000006400000006000000640000000b000000640000000a000000640000000900000064000005050000000c01010001000000000000000000000000640000001a00000081000000000000000c000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000003750000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000100000000000003e80000000064</value>
     </valuemap>
     <valuemap type="QVariantMap" key="PortsCDPPortBase">
      <value type="bool" key="Collapsed">false</value>
@@ -220,7 +579,7 @@
       <value type="int" key="LARSApp.LARS.Moonpool.DB.HPU.Tank">422</value>
       <value type="int" key="LARSApp.Location">290</value>
      </valuemap>
-     <value type="QByteArray" key="HorizontalHeader">000000ff0000000000000001000000010000000700000000000000000000000012090a00000000040000000900000094000000030000007800000000000000000000000b00000064000008960000001201010001000000000000000000000000640000001a0000008100000000000000120000000000000001000000000000009c0000000100000000000000540000000100000000000000000000000100000000000000c700000001000000000000007a0000000100000000000000cc0000000100000000000001540000000100000000000001ed0000000100000000000000000000000100000000000000a000000001000000000000000000000001000000000000004700000001000000000000003500000001000000000000003f0000000100000000000000400000000100000000000000590000000100000000000000640000000100000000000003e80000000064</value>
+     <value type="QByteArray" key="HorizontalHeader">000000ff0000000000000001000000010000000700000000000000000000000012090a0000000004000000030000007800000000000000000000000b000000640000000900000094000008960000001201010001000000000000000000000000640000001a0000008100000000000000120000000000000001000000000000009c0000000100000000000000540000000100000000000000000000000100000000000000c700000001000000000000007a0000000100000000000000cc0000000100000000000001540000000100000000000001ed0000000100000000000000000000000100000000000000a000000001000000000000000000000001000000000000004700000001000000000000003500000001000000000000003f0000000100000000000000400000000100000000000000590000000100000000000000640000000100000000000003e80000000064</value>
     </valuemap>
     <valuemap type="QVariantMap" key="StateTransitionsCDPStateTransition">
      <value type="bool" key="Collapsed">true</value>
@@ -253,7 +612,13 @@
       <value type="int" key="REVSim.DTWinch.FC">122</value>
       <value type="int" key="REVSim.StorageWinch.ArmEncoder">133</value>
      </valuemap>
-     <value type="QByteArray" key="HorizontalHeader">000000ff00000000000000010000000100000001000000000000000000000000130140000000000200000000000000000000000e00000064000008490000001301010001000000000000000000000000640000001a000000810000000000000013000000000000000100000000000000eb00000001000000000000011700000001000000000000006400000001000000000000006400000001000000000000007b00000001000000000000007f00000001000000000000009a00000001000000000000007b00000001000000000000006400000001000000000000006400000001000000000000001a00000001000000000000006400000001000000000000006400000001000000000000000000000001000000000000009a0000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000003e80000000064</value>
+     <value type="QByteArray" key="HorizontalHeader">000000ff0000000000000001000000010000000100000000000000000000000013014000000000020000000e000000640000000000000000000008490000001301010001000000000000000000000000640000001a000000810000000000000013000000000000000100000000000000eb00000001000000000000011700000001000000000000006400000001000000000000006400000001000000000000007b00000001000000000000007f00000001000000000000009a00000001000000000000007b00000001000000000000006400000001000000000000006400000001000000000000001a00000001000000000000006400000001000000000000006400000001000000000000000000000001000000000000009a0000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000003e80000000064</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="TopicMQTTIO.TopicBase">
+     <value type="bool" key="Collapsed">false</value>
+     <value type="bool" key="FullyExpanded">false</value>
+     <valuemap type="QVariantMap" key="Heights"/>
+     <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000000f0100000000010000000000000064000005780000000f01010001000000000000000000000000640000001a00000081000000000000000f000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000003e80000000064</value>
     </valuemap>
    </valuemap>
   </valuemap>
@@ -261,559 +626,701 @@
  <data>
   <variable>ProjectExplorer.Project.Target.0</variable>
   <valuemap type="QVariantMap">
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clone of CDP 4.7 Linux x86 64bit for BrewingCabinet</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clone of CDP 4.7 Linux x86 64bit for BrewingCabinet</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{391fcaf2-7768-4f41-8426-c5e58cbda511}</value>
-   <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
-   <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">-1</value>
-   <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">-1</value>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/svein/Projects/BrewingCabinet/systems/build-BrewingCabinet</value>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">qmake</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.LinkQmlDebuggingLibrary">false</value>
-      <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.SeparateDebugInfo">false</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.UseQtQuickCompiler">false</value>
-     </valuemap>
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
-       <value type="QString">-w</value>
-       <value type="QString">-r</value>
-      </valuelist>
-      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">-j4</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
-     </valuemap>
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
-       <value type="QString">-w</value>
-       <value type="QString">-r</value>
-      </valuelist>
-      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">install</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
-     </valuemap>
-     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">3</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
-    </valuemap>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
-       <value type="QString">-w</value>
-       <value type="QString">-r</value>
-      </valuelist>
-      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">true</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
-     </valuemap>
-     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
-    </valuemap>
-    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges">
-     <value type="QString">QMAKEFEATURES=/home/svein/CDPStudioInternal/toolkits/linux_x86_64_12/CDP-4.7/qmakefeatures:/home/svein/CDPStudioWorkspace/deployments/libraries/CDP_4.7_Linux_x86_64bit/qmakefeatures</value>
-     <value type="QString">INSTALL_ROOT=/home/svein/CDPStudioWorkspace/deployments/libraries/CDP_4.7_Linux_x86_64bit</value>
-     <value type="QString">TMP=</value>
-    </valuelist>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Release</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
-    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
-    <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">true</value>
-   </valuemap>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/svein/Projects/BrewingCabinet/systems/build-BrewingCabinet</value>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">qmake</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.LinkQmlDebuggingLibrary">false</value>
-      <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.SeparateDebugInfo">false</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.UseQtQuickCompiler">false</value>
-     </valuemap>
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
-       <value type="QString">-w</value>
-       <value type="QString">-r</value>
-      </valuelist>
-      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">-j4</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
-     </valuemap>
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
-       <value type="QString">-w</value>
-       <value type="QString">-r</value>
-      </valuelist>
-      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">install</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
-     </valuemap>
-     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">3</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
-    </valuemap>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
-       <value type="QString">-w</value>
-       <value type="QString">-r</value>
-      </valuelist>
-      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">true</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
-     </valuemap>
-     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
-    </valuemap>
-    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges">
-     <value type="QString">QMAKEFEATURES=/home/svein/CDPStudioInternal/toolkits/linux_x86_64_12/CDP-4.7/qmakefeatures:/home/svein/CDPStudioWorkspace/deployments/libraries/CDP_4.7_Linux_x86_64bit/qmakefeatures</value>
-     <value type="QString">INSTALL_ROOT=/home/svein/CDPStudioWorkspace/deployments/libraries/CDP_4.7_Linux_x86_64bit</value>
-     <value type="QString">TMP=</value>
-    </valuelist>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Debug</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
-    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
-    <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">true</value>
-   </valuemap>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/svein/Projects/BrewingCabinet/systems/build-BrewingCabinet</value>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">qmake</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.LinkQmlDebuggingLibrary">false</value>
-      <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.SeparateDebugInfo">true</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.UseQtQuickCompiler">false</value>
-     </valuemap>
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
-       <value type="QString">-w</value>
-       <value type="QString">-r</value>
-      </valuelist>
-      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">-j4</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
-     </valuemap>
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
-       <value type="QString">-w</value>
-       <value type="QString">-r</value>
-      </valuelist>
-      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">install</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
-     </valuemap>
-     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">3</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
-    </valuemap>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
-       <value type="QString">-w</value>
-       <value type="QString">-r</value>
-      </valuelist>
-      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">true</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
-     </valuemap>
-     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
-    </valuemap>
-    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges">
-     <value type="QString">QMAKEFEATURES=/home/svein/CDPStudioInternal/toolkits/linux_x86_64_12/CDP-4.7/qmakefeatures:/home/svein/CDPStudioWorkspace/deployments/libraries/CDP_4.7_Linux_x86_64bit/qmakefeatures</value>
-     <value type="QString">INSTALL_ROOT=/home/svein/CDPStudioWorkspace/deployments/libraries/CDP_4.7_Linux_x86_64bit</value>
-     <value type="QString">TMP=</value>
-    </valuelist>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Profile</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
-    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
-    <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">true</value>
-   </valuemap>
-   <value type="int" key="ProjectExplorer.Target.BuildConfigurationCount">3</value>
-   <value type="int" key="ProjectExplorer.Target.DeployConfigurationCount">0</value>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.PluginSettings">
-    <value type="QString" key="StudioProjectId">/home/svein/Projects/BrewingCabinet/systems/BrewingCabinet/BrewingCabinet.pro</value>
-   </valuemap>
-   <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">0</value>
-  </valuemap>
- </data>
- <data>
-  <variable>ProjectExplorer.Project.Target.1</variable>
-  <valuemap type="QVariantMap">
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clone of CDP 4.7 Linux x86 64bit for BrewingCabinetApp</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clone of CDP 4.7 Linux x86 64bit for BrewingCabinetApp</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{f6141af1-b187-4a23-be99-4d743894997e}</value>
+   <value type="QString" key="DeviceType">Desktop</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clone of CDP 4.10 Linux x86 64-bit for BrewingCabinet</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clone of CDP 4.10 Linux x86 64-bit for BrewingCabinet</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">/home/svein/BrewingCabinet/systems/BrewingCabinet/BrewingCabinet.pro</value>
    <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/svein/Projects/BrewingCabinet/systems/build-BrewingCabinet/BrewingCabinetApp</value>
+    <value type="bool">true</value>
+    <value type="int" key="EnableQmlDebugging">2</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/svein/BrewingCabinet/systems/build-BrewingCabinet</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/home/svein/BrewingCabinet/systems/build-BrewingCabinet</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">qmake</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.LinkQmlDebuggingLibrary">false</value>
       <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
       <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.SeparateDebugInfo">false</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.UseQtQuickCompiler">false</value>
+      <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis"/>
      </valuemap>
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Validate structure</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">StructureValidationStep</value>
-     </valuemap>
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
-       <value type="QString">-w</value>
-       <value type="QString">-r</value>
-      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
       <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">-j4</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments"></value>
       <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
      </valuemap>
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
-       <value type="QString">-w</value>
-       <value type="QString">-r</value>
-      </valuelist>
-      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">install</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
-     </valuemap>
-     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">4</value>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">2</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
     </valuemap>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
-       <value type="QString">-w</value>
-       <value type="QString">-r</value>
-      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
       <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">true</value>
       <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
       <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
     </valuemap>
     <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
     <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges">
-     <value type="QString">QMAKEFEATURES=/home/svein/CDPStudioInternal/toolkits/linux_x86_64_12/CDP-4.7/qmakefeatures:/home/svein/CDPStudioWorkspace/deployments/libraries/CDP_4.7_Linux_x86_64bit/qmakefeatures</value>
-     <value type="QString">INSTALL_ROOT=/home/svein/CDPStudioWorkspace/deployments/libraries/CDP_4.7_Linux_x86_64bit</value>
-     <value type="QString">TMP=</value>
-    </valuelist>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Release</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Release</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
-    <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">true</value>
+    <value type="int" key="QtQuickCompiler">0</value>
+    <value type="int" key="SeparateDebugInfo">2</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/svein/Projects/BrewingCabinet/systems/build-BrewingCabinet/BrewingCabinetApp</value>
+    <value type="bool">true</value>
+    <value type="int" key="EnableQmlDebugging">2</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/svein/BrewingCabinet/systems/build-BrewingCabinet</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/home/svein/BrewingCabinet/systems/build-BrewingCabinet</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">qmake</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.LinkQmlDebuggingLibrary">false</value>
       <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
       <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.SeparateDebugInfo">false</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.UseQtQuickCompiler">false</value>
+      <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis"/>
      </valuemap>
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Validate structure</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">StructureValidationStep</value>
-     </valuemap>
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
-       <value type="QString">-w</value>
-       <value type="QString">-r</value>
-      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
       <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">-j4</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments"></value>
       <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
      </valuemap>
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
-       <value type="QString">-w</value>
-       <value type="QString">-r</value>
-      </valuelist>
-      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">install</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
-     </valuemap>
-     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">4</value>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">2</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
     </valuemap>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
-       <value type="QString">-w</value>
-       <value type="QString">-r</value>
-      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
       <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">true</value>
       <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
       <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
     </valuemap>
     <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
     <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges">
-     <value type="QString">QMAKEFEATURES=/home/svein/CDPStudioInternal/toolkits/linux_x86_64_12/CDP-4.7/qmakefeatures:/home/svein/CDPStudioWorkspace/deployments/libraries/CDP_4.7_Linux_x86_64bit/qmakefeatures</value>
-     <value type="QString">INSTALL_ROOT=/home/svein/CDPStudioWorkspace/deployments/libraries/CDP_4.7_Linux_x86_64bit</value>
-     <value type="QString">TMP=</value>
-    </valuelist>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Debug</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Debug</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
-    <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">true</value>
+    <value type="int" key="QtQuickCompiler">2</value>
+    <value type="int" key="SeparateDebugInfo">2</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/svein/Projects/BrewingCabinet/systems/build-BrewingCabinet/BrewingCabinetApp</value>
+    <value type="bool">true</value>
+    <value type="int" key="EnableQmlDebugging">2</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/svein/BrewingCabinet/systems/build-BrewingCabinet</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/home/svein/BrewingCabinet/systems/build-BrewingCabinet</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">qmake</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.LinkQmlDebuggingLibrary">false</value>
       <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
       <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.SeparateDebugInfo">true</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.UseQtQuickCompiler">false</value>
+      <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis"/>
      </valuemap>
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Validate structure</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">StructureValidationStep</value>
-     </valuemap>
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
-       <value type="QString">-w</value>
-       <value type="QString">-r</value>
-      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
       <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">-j4</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments"></value>
       <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
      </valuemap>
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
-       <value type="QString">-w</value>
-       <value type="QString">-r</value>
-      </valuelist>
-      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">install</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
-     </valuemap>
-     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">4</value>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">2</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
     </valuemap>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
-       <value type="QString">-w</value>
-       <value type="QString">-r</value>
-      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
       <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">true</value>
       <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
       <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
     </valuemap>
     <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
     <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges">
-     <value type="QString">QMAKEFEATURES=/home/svein/CDPStudioInternal/toolkits/linux_x86_64_12/CDP-4.7/qmakefeatures:/home/svein/CDPStudioWorkspace/deployments/libraries/CDP_4.7_Linux_x86_64bit/qmakefeatures</value>
-     <value type="QString">INSTALL_ROOT=/home/svein/CDPStudioWorkspace/deployments/libraries/CDP_4.7_Linux_x86_64bit</value>
-     <value type="QString">TMP=</value>
-    </valuelist>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Profile</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Profile</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
-    <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">true</value>
+    <value type="int" key="QtQuickCompiler">0</value>
+    <value type="int" key="SeparateDebugInfo">0</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.BuildConfigurationCount">3</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.DeployConfiguration.0">
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Local Deploy</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectManager.LocalDeployStep</value>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Deploy</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Deploy</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Deploy</value>
     </valuemap>
     <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">1</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Deploy locally</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.DeployConfiguration.CustomData"/>
+    <value type="bool" key="ProjectExplorer.DeployConfiguration.CustomDataEnabled">false</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectManager.LocalDeployConfiguration</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.DeployConfigurationCount">1</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.PluginSettings">
-    <value type="QString" key="StudioProjectId">61090810409479</value>
+    <value type="QString" key="StudioProjectId">/home/svein/BrewingCabinet/systems/BrewingCabinet/BrewingCabinet.pro</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.0">
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">BrewingCabinetApp</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectManager.LocalRunConfiguration/home/svein/Projects/BrewingCabinet/systems/BrewingCabinet/BrewingCabinetApp/BrewingCabinetApp.pro</value>
-    <value type="QString" key="ProjectManager.LocalRunConfiguration.ProFile">BrewingCabinetApp/BrewingCabinetApp.pro</value>
-    <value type="uint" key="RunConfiguration.QmlDebugServerPort">3768</value>
+    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.Executable"></value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.CustomExecutableRunConfiguration</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey"></value>
+    <value type="QString" key="RunConfiguration.Arguments"></value>
+    <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
+    <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseMultiProcess">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default"></value>
+   </valuemap>
+   <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>ProjectExplorer.Project.Target.1</variable>
+  <valuemap type="QVariantMap">
+   <value type="QString" key="DeviceType">Desktop</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clone of CDP 4.10 Linux x86 64-bit for BrewingCabinetApp</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clone of CDP 4.10 Linux x86 64-bit for BrewingCabinetApp</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">/home/svein/BrewingCabinet/systems/BrewingCabinet/BrewingCabinetApp/BrewingCabinetApp.pro</value>
+   <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
+   <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
+   <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
+    <value type="bool">true</value>
+    <value type="int" key="EnableQmlDebugging">2</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/svein/BrewingCabinet/systems/build-BrewingCabinet</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/home/svein/BrewingCabinet/systems/build-BrewingCabinet</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
+      <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
+      <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis"/>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">StudioCore.StructureValidationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">StudioCore.ProFileGenerationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments"></value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">4</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">true</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Release</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
+    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
+    <value type="int" key="QtQuickCompiler">0</value>
+    <value type="int" key="SeparateDebugInfo">2</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
+    <value type="bool">true</value>
+    <value type="int" key="EnableQmlDebugging">2</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/svein/BrewingCabinet/systems/build-BrewingCabinet</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/home/svein/BrewingCabinet/systems/build-BrewingCabinet</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
+      <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
+      <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis"/>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">StudioCore.StructureValidationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">StudioCore.ProFileGenerationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments"></value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">4</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">true</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Debug</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
+    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
+    <value type="int" key="QtQuickCompiler">2</value>
+    <value type="int" key="SeparateDebugInfo">2</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
+    <value type="bool">true</value>
+    <value type="int" key="EnableQmlDebugging">2</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/svein/BrewingCabinet/systems/build-BrewingCabinet</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/home/svein/BrewingCabinet/systems/build-BrewingCabinet</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
+      <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
+      <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis"/>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">StudioCore.StructureValidationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">StudioCore.ProFileGenerationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments"></value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">4</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">true</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Profile</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
+    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
+    <value type="int" key="QtQuickCompiler">0</value>
+    <value type="int" key="SeparateDebugInfo">0</value>
+   </valuemap>
+   <value type="int" key="ProjectExplorer.Target.BuildConfigurationCount">3</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.DeployConfiguration.0">
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectManager.LocalDeployStep</value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Deploy</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Deploy</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Deploy</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">1</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.DeployConfiguration.CustomData"/>
+    <value type="bool" key="ProjectExplorer.DeployConfiguration.CustomDataEnabled">false</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectManager.LocalDeployConfiguration</value>
+   </valuemap>
+   <value type="int" key="ProjectExplorer.Target.DeployConfigurationCount">1</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.PluginSettings">
+    <value type="QString" key="StudioProjectId">/home/svein/BrewingCabinet/systems/BrewingCabinet/BrewingCabinetApp/BrewingCabinetApp.pro</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.0">
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">BrewingCabinetApp</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectManager.LocalRunConfiguration/home/svein/BrewingCabinet/systems/BrewingCabinet/BrewingCabinetApp/BrewingCabinetApp.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/svein/BrewingCabinet/systems/BrewingCabinet/BrewingCabinetApp/BrewingCabinetApp.pro</value>
+    <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseMultiProcess">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/svein/CDPStudioWorkspace/deployments/systems/CDP_4.10_Linux_x86_64-bit/BrewingCabinet/BrewingCabinetApp</value>
+   </valuemap>
+   <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>ProjectExplorer.Project.Target.2</variable>
+  <valuemap type="QVariantMap">
+   <value type="QString" key="DeviceType">GenericLinuxOsType</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clone of CDP 4.10 Raspbian ARMv6 32-bit for BrewCabinetWitHAT</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clone of CDP 4.10 Raspbian ARMv6 32-bit for BrewCabinetWitHAT</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">/home/svein/BrewingCabinet/systems/BrewingCabinet/BrewCabinetWitHAT/BrewCabinetWitHAT.pro</value>
+   <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
+   <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
+   <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
+    <value type="bool">true</value>
+    <value type="int" key="EnableQmlDebugging">2</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/svein/BrewingCabinet/systems/build-BrewingCabinet</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/home/svein/BrewingCabinet/systems/build-BrewingCabinet</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
+      <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
+      <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis"/>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">StudioCore.StructureValidationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">StudioCore.ProFileGenerationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments"></value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">4</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">true</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Release</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
+    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
+    <value type="int" key="QtQuickCompiler">0</value>
+    <value type="int" key="SeparateDebugInfo">2</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
+    <value type="bool">true</value>
+    <value type="int" key="EnableQmlDebugging">2</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/svein/BrewingCabinet/systems/build-BrewingCabinet</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/home/svein/BrewingCabinet/systems/build-BrewingCabinet</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
+      <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">true</value>
+      <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis"/>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">StudioCore.StructureValidationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">StudioCore.ProFileGenerationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments"></value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">4</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">true</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Debug</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
+    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
+    <value type="int" key="QtQuickCompiler">2</value>
+    <value type="int" key="SeparateDebugInfo">2</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
+    <value type="bool">true</value>
+    <value type="int" key="EnableQmlDebugging">2</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/svein/BrewingCabinet/systems/build-BrewingCabinet</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/home/svein/BrewingCabinet/systems/build-BrewingCabinet</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
+      <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
+      <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis"/>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">StudioCore.StructureValidationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">StudioCore.ProFileGenerationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments"></value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">4</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">true</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Profile</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
+    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
+    <value type="int" key="QtQuickCompiler">0</value>
+    <value type="int" key="SeparateDebugInfo">0</value>
+   </valuemap>
+   <value type="int" key="ProjectExplorer.Target.BuildConfigurationCount">3</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.DeployConfiguration.0">
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.KillAppStep</value>
+      <valuelist type="QVariantList" key="ProjectExplorer.RunConfiguration.LastDeployedFiles"/>
+      <valuelist type="QVariantList" key="ProjectExplorer.RunConfiguration.LastDeployedHosts"/>
+      <valuelist type="QVariantList" key="ProjectExplorer.RunConfiguration.LastDeployedRemotePaths"/>
+      <valuelist type="QVariantList" key="ProjectExplorer.RunConfiguration.LastDeployedSysroots"/>
+      <valuelist type="QVariantList" key="RemoteLinux.LastDeployedLocalTimes"/>
+      <valuelist type="QVariantList" key="RemoteLinux.LastDeployedRemoteTimes"/>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectManager.RemoteDeployStep</value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">2</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Deploy</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Deploy</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Deploy</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">1</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.DeployConfiguration.CustomData"/>
+    <value type="bool" key="ProjectExplorer.DeployConfiguration.CustomDataEnabled">false</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectManager.RemoteDeployConfiguration</value>
+   </valuemap>
+   <value type="int" key="ProjectExplorer.Target.DeployConfigurationCount">1</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.PluginSettings">
+    <value type="QString" key="StudioProjectId">/home/svein/BrewingCabinet/systems/BrewingCabinet/BrewCabinetWitHAT/BrewCabinetWitHAT.pro</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.0">
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">1</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes">
+     <value type="QString">CDPBASE=/home/svein/CDPStudio/toolkits/raspbian_armv6_13/CDP-4.10</value>
+     <value type="QString">DISPLAY=:0.0</value>
+    </valuelist>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">BrewCabinetWitHAT (on BrewPIWithHAT)</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:/home/svein/BrewingCabinet/systems/BrewingCabinet/BrewCabinetWitHAT/BrewCabinetWitHAT.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/svein/BrewingCabinet/systems/BrewingCabinet/BrewCabinetWitHAT/BrewCabinetWitHAT.pro</value>
+    <value type="int" key="RemoteLinux.EnvironmentAspect.Version">1</value>
+    <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>
+    <value type="bool" key="RemoteLinux.RunConfig.UseAlternateRemoteExecutable">false</value>
+    <value type="QString" key="RunConfiguration.Arguments"></value>
+    <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
+    <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseMultiProcess">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseX11Forwarding">false</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/pi/BrewingCabinet/BrewCabinetWitHAT</value>
+    <value type="QString" key="RunConfiguration.X11Forwarding">:0</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>
  </data>
  <data>
   <variable>ProjectExplorer.Project.TargetCount</variable>
-  <value type="int">2</value>
+  <value type="int">3</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.Updater.FileVersion</variable>
-  <value type="int">18</value>
+  <value type="int">22</value>
  </data>
  <data>
   <variable>Version</variable>
-  <value type="int">18</value>
+  <value type="int">22</value>
  </data>
 </qtcreator>

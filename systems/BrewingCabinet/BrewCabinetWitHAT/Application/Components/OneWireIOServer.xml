@@ -1,0 +1,53 @@
+<Component Model="OneWireIO.OneWireIOServer" Name="OneWireIOServer" src="Components/OneWireIOServer.xml" Description="Reads OneWire data from the 1-Wire driver in raspbian">
+  <SchedulingOrder>TopDown</SchedulingOrder>
+  <SchedulingGroup>Default</SchedulingGroup>
+  <fs>5</fs>
+  <Status>0</Status>
+
+
+  <Signals>
+    <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
+    <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+    <Signal Description="If implemented by spesific IOServer the signal can be set true to disable output." Input="1" Model="CDPSignal&lt;bool&gt;" Name="OutputDisable" Type="bool"></Signal>
+    <Signal Description="The time needed to perform one send and receive." Input="0" Model="CDPSignal&lt;double&gt;" Name="Send-Receive Roundtrip time" Type="double" Unit="s"></Signal>
+    <Signal Description="Number of items working in ioserver." Input="0" Model="CDPSignal&lt;unsigned int&gt;" Name="NumberOfNodesOnline" Type="unsigned int" Unit="count"></Signal>
+    <Signal Description="Number of items total in ioserver." Input="0" Model="CDPSignal&lt;unsigned int&gt;" Name="NumberOfNodes" Type="unsigned int" Unit="count"></Signal>
+    <Signal Input="0" Model="CDPSignal&lt;bool&gt;" Name="outputDisabled" Type="bool" Value="0" Description="Set to true when output is disabled (if parameter RD output disable control is set, and RDManager is not ActiveMaster)."></Signal>
+  </Signals>
+
+  <Alarms>
+    <Alarm Description="A component was suspended!" Name="Component Suspended" Text="Component was suspended!"></Alarm>
+    <Alarm Description="Transmission-error alarm" Name="Transmission Error" Text="IOServer transmission-error alarm"></Alarm>
+  </Alarms>
+
+  <Parameters>
+    <Parameter Description="Delay before setting Transmission Error alarm." Name="SignalTimeout" PreviousValue="1" TimeLastChanged="0" Unit="s" Value="1"></Parameter>
+  </Parameters>
+
+  <Timers>
+    <Timer Description="Timer used to delay setting Transmission Error alarm. Timeout-delay is configured in Parameter SignalTimeout." Model="CDPParameterTimer" Name="SignalTimeoutTimer"></Timer>
+    <Timer Model="CDPTimer" Name="ProcessTimer"></Timer>
+  </Timers>
+
+  <OneWireSensors>
+    <OneWireSensor Input="0" Model="OneWireIO.OneWireSensor" Name="Tank1Temp" SensorID="28-041771099cff" Type="double" Value="0" NetworkConvert="0">
+      <Operator Model="Automation.DivOperator&lt;double&gt;" Name="DivOperator" Type="double" Value="0" Description="Divide signal with arguments operator">
+        <Argument CppName="" Description="Default input argument" Input="1" Model="DefaultArgument&lt;double&gt;" Name="In1" Routing="" Type="double" Value="1"></Argument>
+        <Argument CppName="" Description="Divisor" Input="1" Model="Argument&lt;double&gt;" Name="Argument" Routing="" Type="double" Value="1000"></Argument></Operator>
+      <Operator Model="Automation.IIRFilter&lt;double&gt;" Name="IIRFilter" Type="double" f3dB="0.0010000000000000000208" Value="0" Description="An infinite impulse response (IIR) low-pass filter operator"></Operator></OneWireSensor>
+    <OneWireSensor Input="0" Model="OneWireIO.OneWireSensor" Name="Tank2Temp" SensorID="28-0317621bfaff" Type="double" Value="0">
+      <Operator Model="Automation.DivOperator&lt;double&gt;" Name="DivOperator" Type="double" Value="0">
+        <Argument CppName="" Description="Default input argument" Input="1" Model="DefaultArgument&lt;double&gt;" Name="In1" Routing="" Type="double" Value="1"></Argument>
+        <Argument CppName="" Description="Divisor" Input="1" Model="Argument&lt;double&gt;" Name="Argument" Routing="" Type="double" Value="1000"></Argument></Operator>
+      <Operator Model="Automation.IIRFilter&lt;double&gt;" Name="IIRFilter" Type="double" f3dB="0.010000000000000000208" Value="0"></Operator></OneWireSensor>
+    <OneWireSensor Input="0" Model="OneWireIO.OneWireSensor" Name="Sensor3Temp" SensorID="28-0316a2bc58ff" Type="double" Value="0">
+      <Operator Model="Automation.DivOperator&lt;double&gt;" Name="DivOperator" Type="double" Value="0" Description="Divide signal with arguments operator">
+        <Argument CppName="" Description="Default input argument" Input="1" Model="DefaultArgument&lt;double&gt;" Name="In1" Routing="" Type="double" Value="1"></Argument>
+        <Argument CppName="" Description="Divisor" Input="1" Model="Argument&lt;double&gt;" Name="Argument" Routing="" Type="double" Value="1000"></Argument></Operator></OneWireSensor>
+    <OneWireSensor Input="0" Model="OneWireIO.OneWireSensor" Name="CabinetToptemp" SensorID="28-03168a3939ff" Type="double" Value="0">
+      <Operator Model="Automation.DivOperator&lt;double&gt;" Name="DivOperator" Type="double" Value="0" Description="Divide signal with arguments operator">
+        <Argument CppName="" Description="Default input argument" Input="1" Model="DefaultArgument&lt;double&gt;" Name="In1" Routing="" Type="double" Value="1"></Argument>
+        <Argument CppName="" Description="Divisor" Input="1" Model="Argument&lt;double&gt;" Name="Argument" Routing="" Type="double" Value="1000"></Argument></Operator></OneWireSensor>
+  </OneWireSensors>
+
+</Component>

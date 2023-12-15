@@ -1,12 +1,13 @@
 <Component Model='BrewingLib.SSRControlledHeater' Name='Heater' src='Components/CabinetControl/Heater.xml'  Description='Solid State Relay controlled heater.&amp;#xa;Will create pulse-width modulated output to obtain requested power.'>
   <fs>100</fs>
+  <SchedulingOrder>BottomUp</SchedulingOrder>
 
   <Signals>
     <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
     <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
     <Signal Description="Requested power" Input="1" Model="CDPSignal&lt;double&gt;" Name="Setpoint" Type="double" Unit="W"  Routing='..Heating'></Signal>
     <Signal Description="SSR output" Input="0" Model="CDPSignal&lt;bool&gt;" Name="SSROutput" Type="bool">
-      <Operator Description="Inverts the value" Model="Automation.InvertOperator&lt;bool&gt;" Name="Invert" Type="bool"></Operator></Signal>
+      <Operator Description="Inverts the value" Model="Automation_deprecated.InvertOperator&lt;bool&gt;" Name="Invert" Type="bool"></Operator></Signal>
   </Signals>
 
   <Alarms>
@@ -14,7 +15,6 @@
   </Alarms>
 
   <Timers>
-    <Timer Description="Timer to measure CDPComponent processing." Model="CDPTimer" Name="ProcessTimer"></Timer>
   </Timers>
 
   <Parameters>

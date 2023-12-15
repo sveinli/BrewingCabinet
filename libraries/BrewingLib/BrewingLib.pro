@@ -1,4 +1,4 @@
-CDPVERSION = 4.7
+CDPVERSION = 4.10
 TYPE = library
 PROJECTNAME = BrewingLib
 

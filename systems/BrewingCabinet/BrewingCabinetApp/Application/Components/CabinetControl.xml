@@ -1,11 +1,12 @@
 <Component Model='BrewingLib.Cabinet' Name='CabinetControl' src='Components/CabinetControl.xml'  Description='Cabinet with heating, cooling and temperature sensor(s).'>
   <fs>1</fs>
+  <SchedulingOrder>BottomUp</SchedulingOrder>
 
   <Signals>
     <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
     <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
     <Signal Description="Setpoint for heater" Input="0" Model="CDPSignal&lt;double&gt;" Name="Heating" Type="double" Unit="W">
-      <Operator Description="Proportional-Integral-Derivative regulator" Model="Automation.PIDRegulator&lt;double&gt;" Name="PIDRegulator" Type="double"  Value='0'>
+      <Operator Description="Proportional-Integral-Derivative regulator" Model="Automation_deprecated.PIDRegulator&lt;double&gt;" Name="PIDRegulator" Type="double"  Value='0'>
         <Argument Description="Current state (position) of system (feedback)" Model="Argument&lt;double&gt;" Name="Y" Type="double" Value="0"  Routing='...TankTemp'></Argument>
         <Argument Description="PID regulator tuning parameter (P). Indicates how much to involve previous difference from SetPoint (proportional) term in every new calculation. Use 0 to eliminate proportional component from calculation." Model="Argument&lt;double&gt;" Name="Kp" Type="double" Value="250"></Argument>
         <Argument Description="PID regulator tuning parameter (I). Indicates how much to involve the time-difference-persisted (integral) term in every new calculation. Use 0 to eliminate integral component from calculation." Model="Argument&lt;double&gt;" Name="Ki" Type="double" Value="0.69999999999999995559"></Argument>
@@ -16,7 +17,7 @@
         <Argument Description="Minimum allowed integral value. Values less than zero can be used to negative limit integral term. Use 0 to disable limiting." Model="Argument&lt;double&gt;" Name="MinI" Type="double" Value="-30"></Argument>
         <Argument Description="Maximum allowed integral value. Values greater than zero can be used to positive limit integral term. Use 0 to disable limiting." Model="Argument&lt;double&gt;" Name="MaxI" Type="double" Value="60"></Argument>
         <Argument Description="Integral decay. Values greater than zero can be used to reduce integral term oscillation effect. Use 0 to disable decay." Model="Argument&lt;double&gt;" Name="TDecay" Type="double" Value="3600"></Argument></Operator>
-      <Operator Description="Limit (truncate) signal output values" Model="Automation.MinMaxLimiter&lt;double&gt;" Name="MinMaxLimiter" Type="double"  Value='0'>
+      <Operator Description="Limit (truncate) signal output values" Model="Automation_deprecated.MinMaxLimiter&lt;double&gt;" Name="MinMaxLimiter" Type="double"  Value='0'>
         <Argument Description="Minimum value to limit output to. Values below that will be replaced with Min value in output." Model="Argument&lt;double&gt;" Name="Min" Type="double" Value="0"></Argument>
         <Argument Description="Maximum value to limit output to. Values above that will be replaced with Max value in output." Model="Argument&lt;double&gt;" Name="Max" Type="double" Value="300"></Argument></Operator></Signal>
     <Signal Description="Air temperature inside cabinet." Input="1" Model="CDPSignal&lt;double&gt;" Name="CabinetAirTemp" Routing="..OneWireIOServer.Sensor3Temp" Type="double" Unit="DegC"></Signal>
@@ -29,7 +30,6 @@
   </Alarms>
 
   <Timers>
-    <Timer Description="Timer to measure CDPComponent processing." Model="CDPTimer" Name="ProcessTimer"></Timer>
   </Timers>
 
   <Parameters>

@@ -2,6 +2,7 @@
 <Model Name="BrewingLib.SSRControlledHeater" >
  <ModelTypeClass>C++</ModelTypeClass>
  <BaseModel>CDPComponent</BaseModel>
+  <SchedulingOrder>BottomUp</SchedulingOrder>
  <Element Name="Priority" Value="normal"/>
  <Element Name="fs" Value="50"/>
  <Attributes>
